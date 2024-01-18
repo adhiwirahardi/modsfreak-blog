@@ -1,0 +1,235 @@
+/* Import Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #000000;
+    color: #23FFA3;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    font-size: 33px; /* Adjust the font size as needed */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px; /* Adjust the width as needed */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+nav a {
+    text-decoration: none;
+    color: #23FFA3;
+    font-weight: bold;
+}
+
+#hero-banner {
+    width: 100%;
+    height: 600px;
+    background-image: url('/img/banner.png');
+    background-size: cover;
+    background-position: center;
+    color: #23FFA3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#deskripsi {
+    padding: 20px;
+    text-align: center;
+}
+
+#affiliate-links {
+    padding: 20px;
+    text-align: center;
+}
+
+.affiliate-box {
+    background-color: #23FFA3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    max-width: 200px; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+
+img.banner {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    max-width: 40%;
+    min-height: min-content;
+    border-bottom: 5px solid #23FFA3; /* Border style to resemble a banner */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #23FFA3;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #2c3034;
+}
+
+footer {
+    background-color: #000000;
+    color: #23FFA3;
+    text-align: center;
+    padding: 10px;
+}
+
+#blog-posts-container {
+    text-align: center;
+    background-color: #23FFA3;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add styles to center and add padding to the blog posts section */
+#blog-posts {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+}
+
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.post-content {
+    text-align: justify;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+}
+
+.product-container img {
+    max-width: 400px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.product-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-links a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #23FFA3;
+    font-weight: bold;
+}
+
+.product-links a:hover {
+    background-color: #383c40;
+  }
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-description {
+    margin-bottom: 10px;
+}
+
+.youtube-link {
+    margin-top: 10px;
+}
+
+.youtube-link a {
+    display: inline-block;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.youtube-link a:hover {
+    background-color: #bc2525;
+}
+
+.youtube-link i {
+    margin-right: 5px;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 600px) {
+    #hero-banner {
+        height: 200px;
+    }
+
+    #deskripsi, #affiliate-links {
+        padding: 10px;
+    }
+
+    .affiliate-box {
+        padding: 10px;
+    }
+
+    .content-container {
+        align-items: center;
+        text-align: center;
+    }
+}

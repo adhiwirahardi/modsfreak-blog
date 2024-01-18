@@ -1,0 +1,16 @@
+{
+    "posts": [
+        {
+            "title": "Modifikasi NEW NMAX Connected",
+            "image": "img/new-nmax.png",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in justo turpis...",
+            "link": "blog-posts/modifikasi-nmax/post-1.html"
+        },
+        {
+            "title": "Modifikasi nmax",
+            "image": "img/nmax.jpg",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in justo turpis...",
+            "link": "blog-posts/modifikasi-nmax/post-1.html"
+        }
+    ]
+}
