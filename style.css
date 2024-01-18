@@ -65,6 +65,17 @@ nav a {
     align-items: center;
 }
 
+.banner {
+    text-align: center;
+}
+
+.banner img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
 #deskripsi {
     padding: 20px;
     text-align: center;

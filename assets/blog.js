@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', async function () {
-    const blogPostsSection = document.getElementById('blog-posts');
+    console.log('DOM loaded');
 
+    const blogPostsSection = document.getElementById('blog-posts');
+    
     try {
         // Fetch the list of posts from the blog-posts directory
         const postList = await fetchPostList();
+        console.log('Fetched post list:', postList);
 
         // Populate the blog posts section
         postList.forEach(post => {
@@ -20,12 +23,12 @@ document.addEventListener('DOMContentLoaded', async function () {
             blogPostsSection.appendChild(postContainer);
         });
     } catch (error) {
-        console.error('Error fetching blog posts:', error);
+        console.error('Error fetching or rendering blog posts:', error);
     }
 
     // Function to fetch the list of posts
     async function fetchPostList() {
-        const response = await fetch('blog-posts.json'); // Assuming you have a JSON file listing your posts
+        const response = await fetch('/assets/blog-posts.json');
         if (!response.ok) {
             throw new Error(`Failed to fetch blog posts. Status: ${response.status}`);
         }
