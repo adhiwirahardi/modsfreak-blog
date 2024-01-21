@@ -326,7 +326,6 @@ footer {
     }
 
     .product-links {
-        display: inline-block;
         flex-direction: column;
         text-align: center;
         padding: 15px;
