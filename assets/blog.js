@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             postContainer.classList.add('blog-post');
 
             postContainer.innerHTML = `
-                <h2>${post.title}</h2>
+                <h1>${post.title}</h1>
                 <img src="${post.image}" alt="${post.title}" class="banner">
                 <p>${post.content}</p>
                 <a href="${post.link}" target="_blank" class="button">Read More</a>
