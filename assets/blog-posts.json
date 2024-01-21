@@ -11,18 +11,7 @@
             "image": "../img/nmaxold.png",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in justo turpis...",
             "link": "../blog-posts/modifikasi-nmax-old/post-2.html"
-        },
-        {
-            "title": "Modifikasi nmax",
-            "image": "../img/nmaxold.png",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in justo turpis...",
-            "link": "../blog-posts/modifikasi-nmax-old/post-2.html"
-        },
-        {
-            "title": "Modifikasi nmax",
-            "image": "../img/nmaxold.png",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in justo turpis...",
-            "link": "../blog-posts/modifikasi-nmax-old/post-2.html"
         }
+
     ]
 }
