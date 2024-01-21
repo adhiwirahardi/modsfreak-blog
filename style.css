@@ -326,11 +326,11 @@ footer {
     }
 
     .product-links {
-        display: flex;
-        flex-direction: row;
+        display: inline-block;
+        flex-direction: column;
         text-align: center;
         padding: 15px;
-        gap: 10px; /* Add gap between elements */
+        gap: 10px;
     }
     .youtube-link {
         align-items: center;
