@@ -1,16 +1,16 @@
 {
     "posts": [
         {
-            "title": "Parts Modifikasi NMAX New Connected",
-            "image": "../img/new-nmax.png",
-            "content": "modifikasi nmax new beserta part - part modifikasi terkini ...",
-            "link": "../blog-posts/modifikasi-nmax-old/part-modifikasi-nmax-new"
-        },
-        {
             "title": "Modifikasi nmax",
             "image": "../img/nmaxold.png",
             "content": "modifikasi nmax new beserta part - part modifikasi terkini ...",
             "link": "../blog-posts/modifikasi-nmax-old/modifikasi-nmax-old.html"
+        },
+        {
+            "title": "Parts Modifikasi NMAX New Connected",
+            "image": "../img/new-nmax.png",
+            "content": "modifikasi nmax new beserta part - part modifikasi terkini ...",
+            "link": "../blog-posts/modifikasi-nmax-old/part-modifikasi-nmax-new"
         }
 
     ]
