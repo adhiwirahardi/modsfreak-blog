@@ -1,14 +1,18 @@
 /* Import Lato font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-
 body {
     color: #23FFA3;
     background-color: #2c2c2c;
     font-family: 'Lato', sans-serif;
     margin: 0;
-    padding: 0 5px;
+    padding: 0 10px; /* Increased the padding for better spacing on smaller screens */
     box-sizing: border-box;
+}
+
+/* Add a general style for headings */
+body h1, body h2, body h3 {
+    margin: 0; /* Reset margin for headings */
 }
 
 body p {
@@ -17,176 +21,71 @@ body p {
     line-height: 1.5;
     letter-spacing: 0.5px;
     text-align: center;
+    margin-bottom: 10px; /* Add spacing between paragraphs */
 }
 
 body h1 {
-    color: #fefefe;
-    font-size: medium; /* Adjust the font size as needed */
-    margin-bottom: 20px; /* Add space between the heading and the next element */
-    line-height: 1.5; /* Adjust the line height as needed for spacing between lines */
+    font-size: 1.5rem; /* Use rem for better responsiveness */
+    margin-bottom: 15px; /* Increased space for better readability */
 }
 
 body h2 {
-    font-size: large;
-    margin-top: 20px; /* Adjust the font size as needed */
-    margin-bottom: 20px; /* Add space between the heading and the next element */
-    line-height: 1.5;
-    letter-spacing: 0.2px;
-    text-align: center;
-    font-weight: bold; /* Adjust the line height as needed for spacing between lines */
+    font-size: 1.2rem; /* Use rem for better responsiveness */
+    margin-top: 20px;
+    margin-bottom: 15px; /* Increased space for better readability */
 }
 
 body h3 {
-    font-size: medium;
-    text-align: center; /* Adjust the font size as needed */
-    margin-bottom: 20px; /* Add space between the heading and the next element */
-    line-height: 1.5;
-    letter-spacing: 0.2px; /* Adjust the line height as needed for spacing between lines */
+    font-size: 1rem; /* Use rem for better responsiveness */
+    margin-bottom: 15px; /* Increased space for better readability */
 }
 
-article {
-    padding: auto;
-    text-align: center;
-}
-
+/* Adjusted header styles */
 header {
     background-color: #000000;
     color: #23FFA3;
     text-align: center;
     padding: 20px;
-    position: relative;
-}
-
-.header {
-    text-align: center;
 }
 
 .header h1 {
-    margin-bottom: 10px; /* Adjust the margin as needed */
-    font-size: 33px; /* Adjust the font size as needed */
+    margin-bottom: 15px; /* Increased space for better readability */
+    font-size: 1.5rem; /* Use rem for better responsiveness */
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    max-width: 50px; /* Adjust the width as needed */
-}
-
+/* Updated styles for mobile navigation */
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 nav li {
-    margin-right: 20px; /* Adjust the margin as needed */
+    margin-bottom: 10px; /* Adjusted margin for better spacing */
 }
 
-nav a {
-    text-decoration: none;
-    color: #23FFA3;
-    font-weight: bold;
-}
-
+/* Updated hero banner styles */
 #hero-banner {
-    width: 100%;
-    height: 600px;
-    background-image: url('/img/banner.png');
-    background-size: cover;
-    background-position: center;
-    color: #23FFA3;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner {
-    text-align: center;
+    height: 400px; /* Adjusted height for better proportions */
 }
 
 .banner img {
-    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto; /* Center the image horizontally */
 }
 
-#deskripsi {
-    padding: 20px;
-    text-align: center;
-}
-
-#affiliate-links {
-    padding: 20px;
-    text-align: center;
-}
-
-.affiliate-box {
-    background-color: #23FFA3;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-img {
-    max-width: 200px; /* Adjust the width as needed */
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
-}
-
-img.banner {
-    display: block;
-    margin: 0 auto; /* Center the image */
-    max-width: 40%;
-    min-height: min-content;
-    border-bottom: 5px solid #23FFA3; /* Border style to resemble a banner */
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #000000;
-    color: #23FFA3;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-.button:hover {
-    background-color: #2c3034;
-}
-
-footer {
-    background-color: #000000;
-    color: #23FFA3;
-    text-align: center;
-    padding: 10px;
-}
-
+/* Updated blog post styles */
 #blog-posts-container {
-    text-align: center;
     background-color: #3a413e;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Add styles to center and add padding to the blog posts section */
 #blog-posts {
-    display: inline-block;
+    display: block;
     text-align: center;
     padding: 20px;
 }
@@ -198,61 +97,32 @@ footer {
 
 .blog-post img {
     max-width: 100%;
-    width: 600px;
+    width: auto; /* Set width to auto for better responsiveness */
     height: auto;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-.post-content {
-    text-align: justify;
-}
-
+/* Updated product container styles */
 .product-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
     box-sizing: border-box;
-    padding: 0 100px; /* Adjust the padding as needed for the space on the sides */
+    padding: 0 10px; /* Adjusted padding for better spacing on smaller screens */
 }
 
 .product-container img {
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-.product-links {
-    flex-direction: column;
-    text-align: center;
-    padding: 15px;
-    gap: 10px;
-}
-
-.product-links a {
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #23FFA3;
-    font-weight: bold;
-}
-
-.product-links a:hover {
-    background-color: #383c40;
-}
-
-.product-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.product-description {
-    margin-bottom: 10px;
-}
-
+/* Updated YouTube link styles */
 .youtube-link {
     align-items: center;
-    text-align: center; /* Add this line to center inline elements */
+    text-align: center;
 }
 
 .youtube-link a {
@@ -264,184 +134,47 @@ footer {
     border-radius: 5px;
 }
 
-.youtube-link a:hover {
-    background-color: #bc2525;
-}
-
-.youtube-link i {
-    margin-right: 5px;
-}
-
-.tokopedia-price-container {
-    font-size: smaller;
-    color: #efefef;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-}
-
+/* Updated button styles for better responsiveness */
+.button,
 .button-mobile {
-    font-size: small;
     display: inline-block;
-    padding: 10px 10px;
-    background-color: #292828;
-    color: #23FFA3;
-    text-decoration: none;
+    padding: 10px 20px;
     border-radius: 10px;
 }
 
-/* Media Queries for responsiveness */
-@media screen and (max-width: 600px) {
-    #hero-banner {
-        height: 200px;
-    }
-
-    #deskripsi, #affiliate-links {
-        padding: 10px;
-    }
-
-    .affiliate-box {
-        padding: 10px;
-    }
-
-    .content-container {
-        align-items: center;
-        text-align: center;
-    }
-
-    .header-content {
-        flex-direction: column;
-        align-items: right;
-    }
-
-    nav {
-        margin-top: 0;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav li {
-        margin-right: 0; 
-        margin-bottom: 5px;
-        font-size: 12px;
-    }
-
-    .blog-post {
-        padding: 20px;
-    }
-
-    .product-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product-container img {
-        max-width: 100%;
-        align-items: center;
-    }
-
-    .product-links {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-        gap: 10px;
-    }
-    .youtube-link {
-        align-items: center;
-        text-align: center; /* Add this line to center inline elements */
-    }
-    .button-mobile {
-        font-size: small;
-        display: inline-block;
-        padding: 10px 10px;
-        background-color: #292828;
-        color: #23FFA3;
-        text-decoration: none;
-        border-radius: 10px;
-    }
-    .button-mobile:hover {
-        background-color: #2c3034;
-    }
+.button-mobile {
+    font-size: 0.8rem; /* Adjusted font size for better readability on smaller screens */
+    padding: 8px 16px; /* Adjusted padding for better spacing on smaller screens */
 }
 
-@media only screen 
-    and (width: 430px) 
-    and (height: 932px) 
-    and (-webkit-device-pixel-ratio: 3) { 
-        /* Styles for Apple Watch Series 6 */
-    #blog-posts {
-        display: inline-block;
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .blog-post {
-        margin: 0 auto;
-        padding: 20px;
-    }
-    
-    .blog-post img {
-        max-width: 100%;
-        width: 390px;
+/* Updated media query for Apple Watch Series 6 */
+@media only screen and (width: 430px) and (height: 932px) and (-webkit-device-pixel-ratio: 3) {
+    #blog-posts img {
+        width: 100%;
         height: auto;
-        display: block;
-        margin: 0 auto; 
-    }
-}
-
-@media only screen 
-and (width: 390px) 
-and (height: 844px) 
-and (-webkit-device-pixel-ratio: 3) { 
-    /* Styles for Apple Watch Series 5 */
-    #blog-posts {
-        display: inline-block;
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .blog-post {
+        max-width: 390px;
         margin: 0 auto;
-        padding: 20px;
     }
-    
-    .blog-post img {
-        max-width: 100%;
-        width: 350px;
-        height: auto;
-        display: block;
-        margin: 0 auto; 
-    }
-
 }
 
-@media only screen 
-and (width: 428px) 
-and (height: 926px) 
-and (-webkit-device-pixel-ratio: 3) { 
-
-    #blog-posts {
-        display: inline-block;
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .blog-post {
+/* Updated media query for Apple Watch Series 5 */
+@media only screen and (width: 390px) and (height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    #blog-posts img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
         margin: 0 auto;
-        padding: 20px;
     }
-    
-    .blog-post img {
-        max-width: 100%;
-        width: 388px;
-        height: auto;
-        display: block;
-        margin: 0 auto; 
-    }
-    
 }
+
+/* Updated media query for a generic device with similar dimensions */
+@media only screen and (width: 428px) and (height: 926px) and (-webkit-device-pixel-ratio: 3) {
+    #blog-posts img {
+        width: 100%;
+        height: auto;
+        max-width: 388px;
+        margin: 0 auto;
+    }
+}
+
+/* Additional media queries for smaller screens or specific devices can be added as needed */
