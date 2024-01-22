@@ -16,6 +16,7 @@ body p {
     font-size: small;
     line-height: 1.5;
     letter-spacing: 0.5px;
+    text-align: center;
 }
 
 body h1 {
@@ -196,11 +197,11 @@ footer {
 }
 
 .blog-post img {
-    width: 100%;
-    max-width: 400px;
+    max-width: 100%;
+    width: 600px;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .post-content {
@@ -238,7 +239,7 @@ footer {
 
 .product-links a:hover {
     background-color: #383c40;
-  }
+}
 
 .product-info {
     display: flex;
@@ -368,14 +369,79 @@ footer {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    /* Styles for screens smaller than 600px */
+@media only screen 
+    and (width: 430px) 
+    and (height: 932px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+        /* Styles for Apple Watch Series 6 */
+    #blog-posts {
+        display: inline-block;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .blog-post {
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .blog-post img {
+        max-width: 100%;
+        width: 3900px;
+        height: auto;
+        display: block;
+        margin: 0 auto; 
+    }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Styles for screens between 601px and 1024px */
+@media only screen 
+and (width: 390px) 
+and (height: 844px) 
+and (-webkit-device-pixel-ratio: 3) { 
+    /* Styles for Apple Watch Series 5 */
+    #blog-posts {
+        display: inline-block;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .blog-post {
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .blog-post img {
+        max-width: 100%;
+        width: 350px;
+        height: auto;
+        display: block;
+        margin: 0 auto; 
+    }
+
 }
 
-@media only screen and (min-width: 1025px) {
-    /* Styles for screens larger than 1024px */
+@media only screen 
+and (width: 428px) 
+and (height: 926px) 
+and (-webkit-device-pixel-ratio: 3) { 
+
+    #blog-posts {
+        display: inline-block;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .blog-post {
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .blog-post img {
+        max-width: 100%;
+        width: 388px;
+        height: auto;
+        display: block;
+        margin: 0 auto; 
+    }
+    
 }
