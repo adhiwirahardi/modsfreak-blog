@@ -296,13 +296,11 @@ footer {
 }
 
 #recommended-posts-container {
-    /* Styles for the container section */
     padding: 20px; /* Adjust padding as needed */
     background-color: #23FFA3; /* Example background color */
 }
 
 #recommended-posts {
-    /* Styles for the inner section */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
