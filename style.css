@@ -183,7 +183,6 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Add styles to center and add padding to the blog posts section */
 #blog-posts {
     display: inline-block;
     text-align: center;
@@ -191,7 +190,7 @@ footer {
 }
 
 .blog-post {
-    margin: 0 auto;
+    margin: 5%;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -216,6 +215,7 @@ footer {
     align-items: center;
     max-width: 100%;
     box-sizing: border-box;
+    border-radius: 20px;
     padding: 0 50px;
 }
 
@@ -296,8 +296,8 @@ footer {
 }
 
 #recommended-posts-container {
-    padding: 20px; /* Adjust padding as needed */
-    background-color: #23FFA3; /* Example background color */
+    padding: 20px;
+    background-color: #23FFA3;
 }
 
 #recommended-posts {
@@ -314,6 +314,7 @@ footer {
     justify-content: center;
     text-align: center;
     width: 30%;
+    max-width: 300px;
     margin: 1.5%;
     box-sizing: border-box;
     padding: 20px;
@@ -328,15 +329,29 @@ footer {
 .recommended-post img {
     width: 100%;
     height: 150px;
-    object-fit: cover; /* Ensure images maintain aspect ratio and cover the whole box */
+    object-fit: cover;
     border-radius: 5px;
 }
 
 
-/* Media Queries for responsiveness */
 @media screen and (max-width: 768px) {
+    header {
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    }
+
+    footer {
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin-top: 10px;
+    
+    }
+    
     #hero-banner {
         height: 200px;
+        box-sizing: border-box;
+        border-radius: 20px;
     }
 
     #deskripsi, #affiliate-links {
@@ -377,7 +392,7 @@ footer {
         font-size: smaller;
         margin: 5%;
         box-sizing: content-box;
-        border-radius: 1%;
+        border-radius: 20px;
         border: 2px solid #23FFA3;
     }
 
@@ -390,11 +405,10 @@ footer {
     }
 
     .blog-post img {
-        max-width: 100%;
-        width: fit-content;
-        max-height: 150px;
-        display: block;
-        margin: 0 auto; 
+        width: 200px;
+        height: fit-content;
+        object-fit: cover;
+        border-radius: 5px;
     }
 
     .product-container {
@@ -416,7 +430,7 @@ footer {
     }
     .youtube-link {
         align-items: center;
-        text-align: center; /* Add this line to center inline elements */
+        text-align: center;
     }
     .button-mobile {
         font-size: small;

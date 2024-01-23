@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         console.log('Fetched all post list:', allPosts);
 
         // Fetch three random posts
-        const recommendedPosts = getRandomPosts(allPosts, 2);
+        const recommendedPosts = getRandomPosts(allPosts, 3);
         console.log('Random recommended post list:', recommendedPosts);
 
         // Populate the recommended posts section
