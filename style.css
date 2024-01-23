@@ -1,7 +1,6 @@
 /* Import Lato font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-
 body {
     color: #23FFA3;
     background-color: #2c2c2c;
@@ -21,27 +20,27 @@ body p {
 
 body h1 {
     color: #fefefe;
-    font-size: medium; /* Adjust the font size as needed */
-    margin-bottom: 20px; /* Add space between the heading and the next element */
-    line-height: 1.5; /* Adjust the line height as needed for spacing between lines */
+    font-size: medium;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 body h2 {
     font-size: large;
-    margin-top: 20px; /* Adjust the font size as needed */
-    margin-bottom: 20px; /* Add space between the heading and the next element */
+    margin-top: 20px;
+    margin-bottom: 20px;
     line-height: 1.5;
     letter-spacing: 0.2px;
     text-align: center;
-    font-weight: bold; /* Adjust the line height as needed for spacing between lines */
+    font-weight: bold;
 }
 
 body h3 {
     font-size: medium;
-    text-align: center; /* Adjust the font size as needed */
-    margin-bottom: 20px; /* Add space between the heading and the next element */
+    text-align: center;
+    margin-bottom: 20px;
     line-height: 1.5;
-    letter-spacing: 0.2px; /* Adjust the line height as needed for spacing between lines */
+    letter-spacing: 0.2px;
 }
 
 article {
@@ -62,8 +61,8 @@ header {
 }
 
 .header h1 {
-    margin-bottom: 10px; /* Adjust the margin as needed */
-    font-size: 33px; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+    font-size: 33px;
 }
 
 .header-content {
@@ -73,7 +72,7 @@ header {
 }
 
 .logo img {
-    max-width: 50px; /* Adjust the width as needed */
+    max-width: 50px;
 }
 
 nav ul {
@@ -83,7 +82,7 @@ nav ul {
 }
 
 nav li {
-    margin-right: 20px; /* Adjust the margin as needed */
+    margin-right: 20px;
 }
 
 nav a {
@@ -111,10 +110,10 @@ nav a {
 }
 
 .banner img {
-    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 0 auto;
 }
 
 #deskripsi {
@@ -142,18 +141,18 @@ nav a {
 }
 
 img {
-    max-width: 200px; /* Adjust the width as needed */
+    max-width: 200px;
     height: auto;
     margin-bottom: 10px;
-    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    border-radius: 5px;
 }
 
 img.banner {
     display: block;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto;
     max-width: 40%;
     min-height: min-content;
-    border-bottom: 5px solid #23FFA3; /* Border style to resemble a banner */
+    border-bottom: 5px solid #23FFA3;
 }
 
 .button {
@@ -192,8 +191,11 @@ footer {
 }
 
 .blog-post {
-    margin: 2% auto;
+    margin: 0 auto;
     padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #2c2c2c;
 }
 
 .blog-post img {
@@ -201,7 +203,7 @@ footer {
     width: 600px;
     height: auto;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .post-content {
@@ -214,7 +216,7 @@ footer {
     align-items: center;
     max-width: 100%;
     box-sizing: border-box;
-    padding: 0 50px; /* Adjust the padding as needed for the space on the sides */
+    padding: 0 50px;
 }
 
 .product-container img {
@@ -253,7 +255,7 @@ footer {
 
 .youtube-link {
     align-items: center;
-    text-align: center; /* Add this line to center inline elements */
+    text-align: center;
 }
 
 .youtube-link a {
@@ -298,18 +300,17 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-     /* Center align items horizontally */
 }
 
 .recommended-post {
-    width: 25%; /* Adjust the width based on your preference */
-    margin: 1.5%; /* Adjust the margin based on your preference */
+    width: 25%;
+    margin: 1.5%;
     box-sizing: border-box;
-    padding: 10px;;
-    border: 2px solid #ddd; /* Add border style and color */
-    border-radius: 8px; /* Add rounded corners to the box */
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
     overflow: hidden;
-    background-color: #000000;
+    background-color: #2c2c2c;
     color: #23FFA3;
     min-width: 200px;
     text-align: center;
@@ -318,7 +319,8 @@ footer {
 .recommended-post img {
     width: 100%;
     height: 150px;
-    align-items: center;
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the whole box */
+    border-radius: 5px;
 }
 
 /* Media Queries for responsiveness */
@@ -361,7 +363,7 @@ footer {
     }
 
     .blog-post {
-        padding: 10%;
+        padding: 10px;
         font-size: smaller;
         margin: 5%;
         box-sizing: content-box;
@@ -370,7 +372,7 @@ footer {
     }
 
     .blog-post h1 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .blog-post p {
@@ -419,40 +421,31 @@ footer {
         background-color: #2c3034;
     }
 
-    #recommended-posts {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-         /* Center align items horizontally */
-    }
-
     .recommended-post {
-        width: 100%; /* Adjust the width based on your preference */
-        margin: 1.5%; /* Adjust the margin based on your preference */
+        width: 100%;
+        margin: 1.5%;
         box-sizing: border-box;
-        border: 2px solid #ddd; /* Add border style and color */
-        border-radius: 8px; /* Add rounded corners to the box */
+        border: 2px solid #ddd;
+        border-radius: 8px;
         overflow: hidden;
-        background-color: #000000;
+        background-color: #2c2c2c;
         color: #23FFA3;
         font-size: 0.9em;
     }
 
     .recommended-post h1 {
-        font-size: 0.9em; /* Adjust the font size for h1 within recommended posts */
-        margin-bottom: 10px; /* Add margin at the bottom of h1 for spacing */ /* Adjust the font color for h1 */
+        font-size: 0.9em;
+        margin-bottom: 10px;
     }
 
     .recommended-post p {
-        font-size: 0.9em; /* Adjust the font size for h1 within recommended posts */
-        margin-bottom: 10px; /* Add margin at the bottom of h1 for spacing */ /* Adjust the font color for h1 */
+        font-size: 0.9em;
+        margin-bottom: 10px;
     }
     
     .recommended-post img {
-        width: 78%;
+        width: 70%;
         height: auto;
+        object-fit: cover;
     }
-
 }
-
