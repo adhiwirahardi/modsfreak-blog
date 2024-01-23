@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     const blogPostsSection = document.getElementById('blog-posts');
     
+    
     try {
         // Fetch the list of posts from the blog-posts directory
         const postList = await fetchPostList();

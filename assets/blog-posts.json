@@ -2,21 +2,21 @@
     "posts": [
         {
             "title": "Modifikasi Nmax old",
-            "image": "../img/nmaxold.png",
+            "image": "/img/nmaxold.png",
             "content": "modifikasi nmax new beserta part - part modifikasi terkini ...",
-            "link": "../blog-posts/modifikasi-nmax-old/modifikasi-nmax-old.html"
+            "link": "/blog-posts/modifikasi-nmax-old/modifikasi-nmax-old.html"
         },
         {
             "title": "Parts Modifikasi NMAX New Connected",
-            "image": "../img/new-nmax.png",
+            "image": "/img/new-nmax.png",
             "content": "modifikasi nmax new beserta part - part modifikasi terkini ...",
-            "link": "../blog-posts/modifikasi-nmax/part-modifikasi-nmax-new.html"
+            "link": "/blog-posts/modifikasi-nmax/part-modifikasi-nmax-new.html"
         },
         {
             "title": "Parts Modifikasi Vario 125 150 2018 up",
-            "image": "../img/vario-125-150-2018-2019-2020.png",
+            "image": "/img/vario-125-150-2018-2019-2020.png",
             "content": "modifikasi nmax new beserta part - part modifikasi terkini ...",
-            "link": "../blog-posts/modifikasi-vario-125-150/modifikasi-vario-125-150.html"
+            "link": "/blog-posts/modifikasi-vario-125-150/modifikasi-vario-125-150.html"
         }
 
     ]
