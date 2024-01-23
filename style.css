@@ -294,7 +294,7 @@ footer {
 }
 
 /* Media Queries for responsiveness */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
     #hero-banner {
         height: 200px;
     }
@@ -375,7 +375,6 @@ footer {
     and (width: 430px) 
     and (height: 932px) 
     and (-webkit-device-pixel-ratio: 3) { 
-        /* Styles for Apple Watch Series 6 */
     #blog-posts {
         display: inline-block;
         text-align: center;
@@ -406,7 +405,6 @@ footer {
 and (width: 390px) 
 and (height: 844px) 
 and (-webkit-device-pixel-ratio: 3) { 
-    /* Styles for Apple Watch Series 5 */
     #blog-posts {
         display: inline-block;
         text-align: center;
@@ -438,7 +436,6 @@ and (-webkit-device-pixel-ratio: 3) {
 and (width: 428px) 
 and (height: 926px) 
 and (-webkit-device-pixel-ratio: 3) { 
-
     #blog-posts {
         display: inline-block;
         text-align: center;
