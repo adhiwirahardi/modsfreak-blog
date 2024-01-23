@@ -336,6 +336,14 @@ footer {
         padding: 20px;
     }
 
+    .blog-post img {
+        max-width: 100%;
+        width: 400px;
+        height: auto;
+        display: block;
+        margin: 0 auto; 
+    }
+
     .product-container {
         flex-direction: column;
         align-items: center;
