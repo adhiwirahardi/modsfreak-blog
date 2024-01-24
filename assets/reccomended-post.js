@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             postContainer.classList.add('recommended-post');
 
             postContainer.innerHTML = `
-                <h1>${post.title}</h1>
-                <img src="${post.image}" alt="${post.title}" class="small-banner">
-                <p>${post.content}</p>
+                <img src="${post.image}" alt="${post.title}">
+                <h1 style="text-align: left; font-size: 12px;">${post.title}</h1>
+                <p style="text-align: left">${post.content}</p>
                 <a href="${post.link}" target="_blank" class="button">Read More</a>
             `;
 
